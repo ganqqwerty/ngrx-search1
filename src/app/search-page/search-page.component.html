@@ -1,0 +1,9 @@
+<div class="card">
+  <div class="input-group"><input type="text"
+                                  class="form-control"></div>
+</div>
+
+<ng-container *ngIf="(searchResults$) | async as searchResults"></ng-container>
+<div *ngFor="let res of searchResults ">
+<app-search-result res=""></app-search-result>
+</div>
